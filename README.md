@@ -3,7 +3,9 @@ I've written some files in python for use with twython.
 To make it work you have to follow these steps:
 
 sudo apt-get install python-pip
+
 sudo easy_install pip
+
 sudo pip install twython
 
 Then register an app on twitter. 
