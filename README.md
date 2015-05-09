@@ -9,4 +9,4 @@ sudo pip install twython
 Then register an app on twitter. 
 Replace the Placeholders with your api keys and secrets.
 Start tweeting statusupdates from your orange pi!
-If you like you can follow my OrangePi Twitterbot at https://twitter.com/orangepiforum
+If you like you can follow my OrangePi Twitterbot at https://twitter.com/orangepiforum 
