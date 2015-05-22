@@ -4,7 +4,7 @@ import sys
 import os
 import time
 from twython import Twython
-
+#A script to make the Orange Pi tweet his Debian Version
 CONSUMER_KEY = 'YOUR CONSUMER KEY'
 CONSUMER_SECRET = 'YOUR CONSUMER SECRET'
 ACCESS_KEY = 'YOUR KEY'
@@ -12,9 +12,11 @@ ACCESS_SECRET = 'YOUR SECRET'
 
 api = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
 
-#cmd = 'cat /etc/debian_version'
-#debian = os.popen(cmd).readline()
+#Set up a variable with a bash command.
 cmd2 = 'uname -a'
+
+#Formating the variable
 kernel = os.popen(cmd2).readline()
-# Tweet mit Debian Version
+
+# The actuall tweet with the Debian Version
 api.update_status(status=''+kernel+' #orangepi #bot')
